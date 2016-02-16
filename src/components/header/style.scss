@@ -1,0 +1,12 @@
+@import "./src/assets/stylesheets/variables";
+@import "./src/assets/stylesheets/mixins/breakpoint";
+
+$b: '.page-header';
+
+#{$b} {
+  font-size: 14px;
+
+  @include bp($bp-md) {
+    font-size: 13px;
+  }
+}
